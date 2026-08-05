@@ -1,0 +1,6 @@
+ if(head == null) return false;
+        if(head.val == Integer.MAX_VALUE) return true;
+        head.val = Integer.MAX_VALUE;
+        return hasCycle(head.next);
+    }
+}
